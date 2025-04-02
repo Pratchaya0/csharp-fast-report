@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder1\**" />
+    <Content Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <None Remove="NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="efpt.config.json.user" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+	<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+
+	<PackageReference Include="itext.bouncy-castle-fips-adapter" Version="9.1.0" />
+
+	<PackageReference Include="itext7" Version="9.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	<PackageReference Include="FastReport.OpenSource" Version="2025.1.0" />
+	<PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2025.1.0" />
+	<PackageReference Include="FastReport.OpenSource.Data.Json" Version="2021.4.0" />
+	<PackageReference Include="FastReport.OpenSource.Web" Version="2025.1.0" />
+	  
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+
+</Project>
